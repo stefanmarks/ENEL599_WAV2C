@@ -9,33 +9,21 @@
     <link rel="stylesheet" href="vendor/bootstrap-4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Wav2C - Online @guilhermerodrigues680</title>
+    <title>Wav2C for ENEL599</title>
 </head>
 <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-sm bg-info navbar-dark">
         <ul class="navbar-nav">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="https://github.com/guilhermerodrigues680/wav2c-online" target="_blank">Wav2C - Online</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://www.audacityteam.org/" target="_blank">Audacity ®</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/guilhermerodrigues680/pywav2c" target="_blank">Wav2C Python3</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="https://github.com/olleolleolle/wav2c" target="_blank">Wav2C C Olle Jonsson</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://playground.arduino.cc/Code/PCMAudio/" target="_blank">PCMAudio Arduino</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/guilhermerodrigues680/wav2c-online/blob/master/examples.md" target="_blank">Códigos de Exemplo</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link disabled" href="#">PCMAudio Atmel AVR</a>
-          </li> -->
         </ul>
     </nav>
     <!-- NAVBAR -->
@@ -43,8 +31,8 @@
 
     <!-- CABECALHO -->
     <div class="jumbotron text-center">
-        <h1>WAV To C - Conversor Online</h1>
-        <p>Converte um WAV Unsigned 8-bit PCM em um array C/C++ para uso em microcontroladores</p>
+        <h1>WAV-to-C Converter for ENEL599</h1>
+        <p>Converts a WAV Unsigned 8-bit PCM file to a C/C++ array for the Arduino Mozzi audio library.</p>
     </div>
     <!-- CABECALHO -->
 
@@ -55,22 +43,21 @@
 
             <!-- COLUNA 1 -->
             <div class="col-sm-6">
-                <h3>Escolha o audio *.wav</h3>
+                <h3>Select a *.wav audio file</h3>
                 <div class="custom-file">
                     <input type="file" class="custom-file-input" id="input-audiowav" accept="audio/wav" >
-                    <label class="custom-file-label" for="customFile" id="label-audio-upload">Escolha o arquivo...</label>
+                    <label class="custom-file-label" for="customFile" id="label-audio-upload">Select a file...</label>
                 </div>
                 <p id="p-file-info"></p>
             </div>
             <!-- COLUNA 1 -->
 
             <!-- COLUNA 2 -->
-            <div id="div-acoes" class="col-sm-6">
-                <h3>Ações</h3>
+            <div id="div-actions" class="col-sm-6">
+                <h3>Actions</h3>
                 <p id="p-status"></p>
-                <button id="button-copy-clipboard" type="button" class="btn btn-info" data-toggle="modal" data-target="#cp-modal">
-                    Copiar Código Gerado</button>
-                <button id="button-download-h-file" class="btn btn-primary">Download sounddata.h</button>
+                <button id="button-copy-clipboard" type="button" class="btn btn-info" data-toggle="modal" data-target="#cp-modal">Copy Generated Code</button>
+                <!--<button id="button-download-h-file" class="btn btn-primary">Download sounddata.h</button>-->
             </div>
             <!-- COLUNA 2 -->
 
@@ -93,12 +80,12 @@
     
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title">Código copiado para área de transferência</h4>
+                <h4 class="modal-title">Code copied to clipboard</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
     
             <!-- Modal body -->
-            <div class="modal-body">Pressione Ctrl+V para colá-lo na sua IDE.</div>
+            <div class="modal-body">Press Ctrl+V to paste it into your IDE.</div>
     
             <!-- Modal footer -->
             <div class="modal-footer">
@@ -113,9 +100,8 @@
 
     <!-- RODAPÉ -->
     <div class="footer">
-        Por: 
-        <a href="https://github.com/guilhermerodrigues680" target="_blank">
-        Guilherme Rodrigues <strong>@guilhermerodrigues680</strong></a>
+        By <a href="https://github.com/guilhermerodrigues680" target="_blank">Guilherme Rodrigues</a>,
+		adapted for ENEL599 by <a href="https://github.com/stefanmarks" target="_blank">Stefan Marks</a>        
     </div>
     <!-- RODAPÉ -->
 
