@@ -8,11 +8,9 @@
     <link rel="stylesheet" href="vendor/prismjs/prism.css">
     <link rel="stylesheet" href="vendor/bootstrap-4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-
     <title>Wav2C for ENEL599</title>
 </head>
 <body>
-    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-sm bg-info navbar-dark">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -26,22 +24,15 @@
           </li>
         </ul>
     </nav>
-    <!-- NAVBAR -->
 
-
-    <!-- CABECALHO -->
     <div class="jumbotron text-center">
         <h1>WAV-to-C Converter for ENEL599</h1>
         <p>Converts a WAV Unsigned 8-bit PCM file to a C/C++ array for the Arduino Mozzi audio library.</p>
     </div>
-    <!-- CABECALHO -->
-
     
-    <!-- CORPO -->
     <div class="container">
         <div class="row">
 
-            <!-- COLUNA 1 -->
             <div class="col-sm-6">
                 <h3>Select a *.wav audio file</h3>
                 <div class="custom-file">
@@ -50,30 +41,21 @@
                 </div>
                 <p id="p-file-info"></p>
             </div>
-            <!-- COLUNA 1 -->
 
-            <!-- COLUNA 2 -->
             <div id="div-actions" class="col-sm-6">
                 <h3>Actions</h3>
                 <p id="p-status"></p>
                 <button id="button-copy-clipboard" type="button" class="btn btn-info" data-toggle="modal" data-target="#cp-modal">Copy Generated Code</button>
                 <!--<button id="button-download-h-file" class="btn btn-primary">Download sounddata.h</button>-->
             </div>
-            <!-- COLUNA 2 -->
 
         </div>
-    </div>
-    <!-- CORPO -->
+    </div>    
 
-
-    <!-- CODIGO GERADO -->
     <div id="div-c-out" class="container">
         <pre><code id="code-c-out" class="language-clike"></code></pre>
-    </div>
-    <!-- CODIGO GERADO -->
+    </div>    
 
-
-    <!-- MODAL AREA DE TRASNFERENCIA-->
     <div class="modal" id="cp-modal">
         <div class="modal-dialog">
         <div class="modal-content">
@@ -95,28 +77,16 @@
         </div>
         </div>
     </div>
-    <!-- MODAL AREA DE TRASNFERENCIA -->
 
-
-    <!-- RODAPÉ -->
     <div class="footer">
         By <a href="https://github.com/guilhermerodrigues680" target="_blank">Guilherme Rodrigues</a>,
 		adapted for ENEL599 by <a href="https://github.com/stefanmarks" target="_blank">Stefan Marks</a>        
     </div>
-    <!-- RODAPÉ -->
 
-
-    <!-- SCRIPTS -->
-
-    <!-- Bootstrap 4.4 -->
     <script src="vendor/jquery/jquery-3.4.1.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap-4.4.1/js/bootstrap.min.js"></script>
-
-    <!-- PrismJS -->
     <script src="vendor/prismjs/prism.js"></script>
-
-    <!-- WAV2C - ONLINE -->
     <script src="js/wav2c-online.js"></script>
 </body>
 </html>
