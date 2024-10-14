@@ -58,7 +58,9 @@ function convertWavToCode() {
 			{
 				if (idx < SAMPLE_COUNT)
 				{
-					signedValue = sample - 127;
+					signedValue = sample - 128;
+					if (signedValue >  127) { signedValue =  127; }
+					if (signedValue < -127) { signedValue = -127; }
 					if (signedValue >  -10 && signedValue <  10) { txt += " "; }
 					if (signedValue > -100 && signedValue < 100) { txt += " "; }
 					if (signedValue >=   0                     ) { txt += " "; }
