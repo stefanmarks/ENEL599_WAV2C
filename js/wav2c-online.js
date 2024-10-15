@@ -50,8 +50,8 @@ function convertWavToCode() {
 //         txt += "// Wav2c Online converter, offline version, adapted by Stefan Marks\n";
 //         txt += "// Based on Javascript version by Guilherme Rodrigues: https://github.com/guilhermerodrigues680/wav2c-online\n";
 //         txt += "// Based on wav2c in C by Olle Jonsson: https://github.com/olleolleolle/wav2c\n\n";
-			txt += `const int    ${soundName}_SAMPLERATE     = ${SAMPLE_RATE}; \n`;
-			txt += `const int    ${soundName}_LENGTH         = ${SAMPLE_COUNT}; \n`;
+			txt += `#define      ${soundName}_SAMPLERATE     ${SAMPLE_RATE}\n`;
+			txt += `#define      ${soundName}_LENGTH         ${SAMPLE_COUNT}\n`;
 			txt += `const int8_t ${soundName}_DATA[] PROGMEM = {\n  `;
 
 			AUDIO_DATA.slice(44).forEach((sample, idx, arr) => 
